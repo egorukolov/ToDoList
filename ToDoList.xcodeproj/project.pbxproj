@@ -9,23 +9,23 @@
 /* Begin PBXBuildFile section */
 		56A6043024ADAD3B009A0838 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A6042F24ADAD3B009A0838 /* AppDelegate.swift */; };
 		56A6043224ADAD3B009A0838 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A6043124ADAD3B009A0838 /* SceneDelegate.swift */; };
-		56A6043424ADAD3B009A0838 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A6043324ADAD3B009A0838 /* ViewController.swift */; };
 		56A6043724ADAD3B009A0838 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A6043524ADAD3B009A0838 /* Main.storyboard */; };
 		56A6043A24ADAD3B009A0838 /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56A6043824ADAD3B009A0838 /* ToDoList.xcdatamodeld */; };
 		56A6043C24ADAD3E009A0838 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56A6043B24ADAD3E009A0838 /* Assets.xcassets */; };
 		56A6043F24ADAD3E009A0838 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A6043D24ADAD3E009A0838 /* LaunchScreen.storyboard */; };
+		56A6044B24ADAECA009A0838 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A6044A24ADAECA009A0838 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		56A6042C24ADAD3B009A0838 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A6042F24ADAD3B009A0838 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56A6043124ADAD3B009A0838 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		56A6043324ADAD3B009A0838 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		56A6043624ADAD3B009A0838 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56A6043924ADAD3B009A0838 /* ToDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoList.xcdatamodel; sourceTree = "<group>"; };
 		56A6043B24ADAD3E009A0838 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56A6043E24ADAD3E009A0838 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56A6044024ADAD3E009A0838 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56A6044A24ADAECA009A0838 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +58,48 @@
 		56A6042E24ADAD3B009A0838 /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
-				56A6042F24ADAD3B009A0838 /* AppDelegate.swift */,
-				56A6043124ADAD3B009A0838 /* SceneDelegate.swift */,
-				56A6043324ADAD3B009A0838 /* ViewController.swift */,
-				56A6043524ADAD3B009A0838 /* Main.storyboard */,
-				56A6043B24ADAD3E009A0838 /* Assets.xcassets */,
-				56A6043D24ADAD3E009A0838 /* LaunchScreen.storyboard */,
-				56A6044024ADAD3E009A0838 /* Info.plist */,
+				56A6044724ADADAB009A0838 /* Controllers */,
+				56A6044624ADAD92009A0838 /* Storyboards */,
+				56A6044924ADADD2009A0838 /* SupportingFiles */,
+				56A6044824ADADBB009A0838 /* Sources */,
 				56A6043824ADAD3B009A0838 /* ToDoList.xcdatamodeld */,
 			);
 			path = ToDoList;
+			sourceTree = "<group>";
+		};
+		56A6044624ADAD92009A0838 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				56A6043524ADAD3B009A0838 /* Main.storyboard */,
+				56A6043D24ADAD3E009A0838 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		56A6044724ADADAB009A0838 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				56A6044A24ADAECA009A0838 /* TableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		56A6044824ADADBB009A0838 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				56A6043B24ADAD3E009A0838 /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		56A6044924ADADD2009A0838 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				56A6042F24ADAD3B009A0838 /* AppDelegate.swift */,
+				56A6043124ADAD3B009A0838 /* SceneDelegate.swift */,
+				56A6044024ADAD3E009A0838 /* Info.plist */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56A6043424ADAD3B009A0838 /* ViewController.swift in Sources */,
 				56A6043024ADAD3B009A0838 /* AppDelegate.swift in Sources */,
 				56A6043224ADAD3B009A0838 /* SceneDelegate.swift in Sources */,
 				56A6043A24ADAD3B009A0838 /* ToDoList.xcdatamodeld in Sources */,
+				56A6044B24ADAECA009A0838 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +322,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 48X7U22M49;
-				INFOPLIST_FILE = ToDoList/Info.plist;
+				INFOPLIST_FILE = ToDoList/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +330,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.ukolovegor23-yandex.ToDoList";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,7 +340,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 48X7U22M49;
-				INFOPLIST_FILE = ToDoList/Info.plist;
+				INFOPLIST_FILE = ToDoList/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,7 +348,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.ukolovegor23-yandex.ToDoList";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
